@@ -1,0 +1,20 @@
+server:
+  port: 7071
+  
+spring:
+  application:
+    name: CourseInfo-Service
+  data:
+    mongodb:
+      embedded:
+        version: 4.0.2
+      authentication-database: admin
+      auto-index-creation: true
+      database: CourseInfo
+      ddl-auto: create-drop
+      username: admin
+      password: pass
+  devtools:
+    livereload:
+      port: 0
+
